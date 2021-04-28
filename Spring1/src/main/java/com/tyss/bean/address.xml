@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+
+<bean  class="com.tyss.bean.Gadgets" id="mov"  >
+
+<property name="gadget" value="mobile" />
+
+<property name="model_name" value="xolox2" />
+<property name="price" value="10000" />
+
+</bean>
+
+<bean  class="com.tyss.bean.Gadgets" id="sahoo" autowire-candidate="false">
+
+<property name="gadget" value="laptop" />
+
+<property name="model_name" value="acer" />
+<property name="price" value="40000" />
+
+</bean>
+
+
+
+
+
+
+</beans>
